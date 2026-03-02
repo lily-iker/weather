@@ -1,0 +1,89 @@
+@import 'tailwindcss';
+
+:root {
+  font-family:
+    -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell',
+    'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+/* ===== Custom Scrollbar ===== */
+
+/* Chrome, Edge, Safari */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(100, 116, 139, 0.4); /* slate-500 */
+  border-radius: 9999px;
+  transition: background 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(100, 116, 139, 0.7);
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(100, 116, 139, 0.4) transparent;
+}
+
+/* Always reserve scrollbar space */
+.forecast-scroll {
+  overflow-y: auto;
+  scrollbar-width: thin; /* Firefox */
+}
+
+/* Chrome / Edge / Safari */
+.forecast-scroll::-webkit-scrollbar {
+  width: 6px; /* ALWAYS 6px */
+}
+
+.forecast-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.forecast-scroll::-webkit-scrollbar-thumb {
+  background: transparent; /* hidden by default */
+  border-radius: 9999px;
+  transition: background 0.25s ease;
+}
+
+/* Show thumb on hover */
+.forecast-scroll:hover::-webkit-scrollbar-thumb {
+  background: rgba(100, 116, 139, 0.4);
+}
+
+.forecast-scroll:hover::-webkit-scrollbar-thumb:hover {
+  background: rgba(100, 116, 139, 0.7);
+}
+
+/* Firefox */
+.forecast-scroll {
+  scrollbar-color: transparent transparent;
+}
+
+.forecast-scroll:hover {
+  scrollbar-color: rgba(100, 116, 139, 0.4) transparent;
+}
