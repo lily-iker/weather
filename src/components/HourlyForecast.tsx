@@ -31,7 +31,7 @@ export const HourlyForecast = ({ hours }: HourlyForecastProps) => {
   }
 
   return (
-    <div className="space-y-3">
+    <div className="space-y-3 select-none">
       <div className="relative bg-white rounded-xl overflow-hidden">
         <div className="overflow-hidden pr-4" ref={emblaRef}>
           <div className="flex gap-3 p-4">
