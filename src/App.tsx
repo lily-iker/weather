@@ -48,7 +48,7 @@ function App() {
   }, [])
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-teal-100 via-blue-50 to-teal-50 flex flex-col">
+    <div className="min-h-screen bg-linear-to-br from-teal-100 via-blue-50 to-teal-50 flex flex-col">
       <Header onSearch={fetchWeather} defaultValue={city} isLoading={loading} />
       <MainContent
         weatherData={weatherData}

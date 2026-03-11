@@ -1,4 +1,4 @@
-import { Cloud, Sun } from 'lucide-react'
+import { Sun } from 'lucide-react'
 import { SearchBar } from './SearchBar'
 
 interface HeaderProps {
@@ -9,7 +9,7 @@ interface HeaderProps {
 
 export const Header = ({ onSearch, defaultValue, isLoading }: HeaderProps) => {
   return (
-    <header className="bg-gradient-to-r from-teal-400 to-blue-400 text-white shadow-lg">
+    <header className="bg-linear-to-r from-teal-400 to-blue-400 text-white shadow-lg">
       <div className="max-w-7xl mx-auto px-4 sm:px-16 py-4">
         {/* Mobile Layout */}
         <div className="lg:hidden space-y-4">

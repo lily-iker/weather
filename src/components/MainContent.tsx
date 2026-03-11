@@ -1,4 +1,4 @@
-import { Cloud, Loader2 } from 'lucide-react'
+import { Loader2 } from 'lucide-react'
 import { CurrentWeather } from './CurrentWeather'
 import { HourlyForecast } from './HourlyForecast'
 import { DailyForecast } from './DailyForecast'

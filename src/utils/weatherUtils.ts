@@ -1,4 +1,4 @@
-import { Cloud, CloudRain, Sun, Wind, Eye, Droplets, Gauge, type LucideIcon } from 'lucide-react'
+import { Cloud, CloudRain, Sun, type LucideIcon } from 'lucide-react'
 
 // Weather condition code mapping to Lucide icons
 export const getWeatherIcon = (code: number): LucideIcon => {
